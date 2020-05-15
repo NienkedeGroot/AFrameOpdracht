@@ -34,12 +34,6 @@
                    dur: 2000; 
                    easing: linear; 
                    loop: 0" 
-
-        animation__color="property: components.material.material.color; 
-                    type: color; 
-                    to: blue; 
-                    startEvents: mouseenter; 
-                    dur: 500";
       >
       </a-box>
       <a-box id="myOtherBox" 
@@ -56,18 +50,26 @@
                    to: -360 0 0 ; 
                    dur: 5000; 
                    easing: linear; 
-                   loop: true" >  
+                   loop: true"
+
+        animation__position="property: position; 
+                   to: 10 2 5; 
+                   dur: 2000; 
+                   easing: linear; 
+                   loop: 0" 
+        >  
       </a-box>
       <a-plane id="ground"
         position="0 0 -4" 
         rotation="-90 0 0" 
         width="100" 
         height="100" 
-        color="#7BC8A4" 
+        color="#7BC8A4"
+        material="src: #grass; repeat: 10 10" 
         
         
         shadow>
-      </a-plane><!-- material="src: #grass; repeat: 10 10" -->
+      </a-plane>
     </a-scene>
   </body>
 </html>
